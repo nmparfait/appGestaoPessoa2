@@ -22,7 +22,7 @@ Variables
   --clr-primary-7: hsl(43, 90%, 76%);
   --clr-primary-8: hsl(45, 86%, 81%);
   --clr-primary-9: hsl(45, 90%, 88%);
-  --clr-primary-10: hsl(45, 100%, 96%);
+  --clr-primary-10: hsl(45, 15%, 15%);
   /* darkest grey - used for headings */
   --clr-grey-1: hsl(209, 61%, 16%);
   --clr-grey-2: hsl(211, 39%, 23%);
@@ -35,7 +35,7 @@ Variables
   --clr-grey-8: hsl(210, 31%, 80%);
   --clr-grey-9: hsl(212, 33%, 89%);
   --clr-grey-10: hsl(210, 36%, 96%);
-  --clr-white: #fff;
+  --clr-white: #937a5d;
   --ff-primary: 'Roboto', sans-serif;
   --ff-secondary: 'Open Sans', sans-serif;
   --transition: all 0.3s linear;
@@ -341,7 +341,7 @@ Connect
   height: 100%;
   /* background: var(--clr-white); */
   /* background: var(--clr-primary-5); */
-  background: rgba(182, 43, 43, 0.6);
+  background: rgba(225, 203, 203, 0.6);
   opacity: 0.7;
   z-index: -1;
 }
@@ -359,7 +359,7 @@ Connect
 }
 
 .video-banner {
-  background: #e9edc9;
+  background: #cbd0a9;
   padding: 3rem 5rem 12rem 5rem;
   text-align: center;
   -webkit-clip-path: polygon(
@@ -389,7 +389,7 @@ About
 */
 
 #about {
-  color : #eddfff;
+  color : #0e0e0e;
   background-color: #ffb703;
 }
 /*
@@ -584,8 +584,9 @@ Services
 }
 
 .contact {
-  background: #fefae0;
+  background: #1c1b18;
   min-height: 50vh;
+  color: #735c1e;
 }
 @media screen and (min-width: 992px) {
   .section-center {

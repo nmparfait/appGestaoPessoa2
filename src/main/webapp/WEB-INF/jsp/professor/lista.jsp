@@ -31,7 +31,7 @@
 				</div>
 			</c:if>
 	
-			<h4>Quantidade de administrativos existentes: ${administrativos.size()}!!!</h4>
+			<h4>Quantidade de professpres existentes: ${professores.size()}!!!</h4>
 			
 			<hr>
 	
@@ -50,17 +50,17 @@
 		      </tr>
 		    </thead>
 		    <tbody>		    
-		    	<c:forEach var="t" items="${administrativos}">
+		    	<c:forEach var="t" items="${professores}">
 			      <tr>
-			        <td>${t.id}</td>
-			        <td>${t.nome}</td>
-			        <td>${t.email}</td>
-			        <td>${t.idade}</td>
-			        <td>${t.sexo}</td>
-			        <td>${t.turma}</td>
-			        <td>${t.salario}</td>
-			        <td>${t.diploma}</td>
-			        <td><a href="/professor/${t.id}/excluir">Excluir</a></td>
+			        <td>${p.id}</td>
+			        <td>${p.nome}</td>
+			        <td>${p.email}</td>
+			        <td>${p.idade}</td>
+			        <td>${p.sexo}</td>
+			        <td>${p.turma}</td>
+			        <td>${p.salario}</td>
+			        <td>${p.diploma}</td>
+			        <td><a href="/professor/${p.id}/excluir">Excluir</a></td>
 			      </tr>
 		    	</c:forEach>
 		    </tbody>

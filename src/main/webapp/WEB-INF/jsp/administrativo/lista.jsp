@@ -48,15 +48,15 @@
 		    <tbody>		    
 		    	<c:forEach var="t" items="${administrativos}">
 			      <tr>
-			        <td>${t.id}</td>
-			        <td>${t.nome}</td>
-			        <td>${t.email}</td>
-			        <td>${t.idade}</td>
-			        <td>${t.sexo}</td>
-			        <td>${t.departamento}</td>
-			        <td>${t.salario}</td>
-			        <td>${t.tempoEmpresa}</td>
-			        <td><a href="/administrativo/${t.id}/excluir">Excluir</a></td>
+			        <td>${a.id}</td>
+			        <td>${a.nome}</td>
+			        <td>${a.email}</td>
+			        <td>${a.idade}</td>
+			        <td>${a.sexo}</td>
+			        <td>${a.departamento}</td>
+			        <td>${a.salario}</td>
+			        <td>${a.tempoEmpresa}</td>
+			        <td><a href="/administrativo/${a.id}/excluir">Excluir</a></td>
 			      </tr>
 		    	</c:forEach>
 		    </tbody>

@@ -19,7 +19,7 @@
 
 	<div class="container">
 	  <h2>Cadastro de Aluno</h2>
-	  <form action="/aluno/incluir" method="post">
+	  <form class="box" action="/aluno/incluir" method="post">
 
 	    <div class="form-group">
 	      <label>Nome:</label>

@@ -38,7 +38,7 @@
 		  </div>
 
 		  <div class="form-group">
-			  <c:if test="${not empty administrativos}">
+			  <c:if test="${not empty administrativo}">
 				  <label>Administrativos:</label>
 				  <select class="form-control" name="administrativo">
 					  <c:forEach var="t" items="${administrativos}">

@@ -21,7 +21,7 @@ public class UsuarioController {
     private UsuarioService usuarioService;
 
     @GetMapping(value= "/usuario")
-    public String telaCadastro(){
+    public String tela(){
         return "/usuario/cadastro";
     }
 

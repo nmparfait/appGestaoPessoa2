@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	    <title>APP Gestão | Lista de Alunos</title>
+	    <title>APP Gestão | Listagem de Alunos</title>
 	    <meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -45,17 +45,17 @@
 				  </tr>
 				</thead>
 				<tbody>
-					<c:forEach var="j" items="${alunos}">
+					<c:forEach var="a" items="${alunos}">
 					  <tr>
-						<td>${j.id}</td>
-						<td>${j.nome}</td>
-						<td>${j.email}</td>
-						<td>${j.idade}</td>
-						<td>${j.sexo}</td>
-						<td>${j.mensalidade}</td>
-						<td>${j.turma}</td>
-						<td>${j.atividadeFisica}</td>
-						<td><a href="/aluno/${j.id}/excluir">Excluir</a></td>
+						<td>${a.nome}</td>
+						<td>${a.email}</td>
+						<td>${a.idade}</td>
+						<td>${a.id}</td>
+						<td>${a.sexo}</td>
+						<td>${a.mensalidade}</td>
+						<td>${a.turma}</td>
+						<td>${a.atividadeFisica}</td>
+						<td><a href="/aluno/${a.id}/excluir">Excluir</a></td>
 					  </tr>
 					</c:forEach>
 				</tbody>

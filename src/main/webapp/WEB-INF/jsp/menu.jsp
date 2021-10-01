@@ -23,19 +23,24 @@
       				<a class="navbar-brand font logoVentura" href="http://localhost:8080">Gestão App</a>
     			</div>
 	  	 	<ul class="nav navbar-nav navbar-right">
-				<c:if test="${empty user}">
+				<c:if test="${not empty user}">
 					http://localhost:8080/login
 					<li><a href="/login"><span class="glyphicon glyphicon-user navSize"></span> login</a></li>
 				    <li><a href="/usuario/lista"><span class="glyphicon glyphicon-eye-open navSize"></span> Usuario</a></li>
 				    <li><a href="/professor/lista"><span class="glyphicon glyphicon-log-in navSize"></span> Professor</a></li>
 				    <li><a href="/administrativo/lista"><span class="glyphicon glyphicon-flag navSize"></span> Administrativo</a></li>
 				    <li><a href="/aluno/lista"><span class="glyphicon glyphicon-retweet navSize"></span> Aluno</a></li>
+					<li><a href="/diretoria/lista"><span class="glyphicon glyphicon-retweet navSize"></span> Diretoria</a></li>
 				    <li><a href="/instituicao/lista"><span class="glyphicon glyphicon-envelope navSize"></span> Instituicao</a></li>
 			    </c:if>
-			    <c:if test="${not empty user}">
-			    	<li><a href="/usuario"><span class="glyphicon glyphicon-flag navSize"></span> Register</a></li>
+			    <c:if test="${ empty user}">
+			    	<li><a href="/usuario"><span class="glyphicon glyphicon-flag navSize"></span> Cadastro</a></li>
 				    <li><a href="/login"><span class="glyphicon glyphicon-retweet navSize"></span> Login</a></li>
 				    <li><a href="http://localhost:8080/#contact"><span class="glyphicon glyphicon-envelope navSize"></span> Contact</a></li>
+
+				</c:if>
+
+				<c:if test="${ not empty user}">
 			    	<li><a href="/logout"><span class="glyphicon glyphicon-log-out"></span>Logout, ${usuario.email}</a></li>
 			    </c:if>
 			 </ul>
