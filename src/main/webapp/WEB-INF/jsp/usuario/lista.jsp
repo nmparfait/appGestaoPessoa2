@@ -12,7 +12,8 @@
 	</head>
 	<body>	
 		<div class="header">
-			<c: import url="../jsp/menu.jsp"/>
+
+			<c:import url="/WEB-INF/jsp/menu.jsp"/>
 		</div>
 		
 		<c:if test="${not empty lista}">
@@ -56,6 +57,6 @@
 	  	<c:if test="${empty lista}">
 			<h4>Não existem usuários cadastrados!!!</h4>	  	
 	  	</c:if>
-	<c: import url="/jsp/footer.jsp"/>
+		<c:import url="/WEB-INF/jsp/footer.jsp"/>
 	</body>
 </html>

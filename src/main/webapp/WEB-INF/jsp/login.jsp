@@ -15,8 +15,8 @@
 
 	</head>
 	<body>
-	
-		<c:import url="../jsp/menu.jsp"/>
+
+		<c:import url="/WEB-INF/jsp/menu.jsp"/>
 
 		
 		 <form class="box" action="/login" method="post">

@@ -1,5 +1,6 @@
 package br.edu.infnet.controller;
 
+import org.hibernate.tool.schema.internal.exec.ScriptTargetOutputToFile;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -20,16 +21,23 @@ public class UsuarioController {
     @Autowired
     private UsuarioService usuarioService;
 
-    @GetMapping(value= "/usuario")
+    @GetMapping(value= "/teste")
     public String tela(){
-        return "/usuario/cadastro";
+        System.out.println("entrei");
+
+        return "index";
+    }
+
+    @GetMapping(value= "/usuario")
+    public String telax(){
+        return "usuario/cadastro";
     }
 
     @PostMapping(value = "/usuario")
     public String incluir(Usuario usuario, Endereco endereco) {
         usuario.setEndereco(endereco);
         usuarioService.incluir(usuario);
-        return "/index";
+        return "index";
     }
 
 

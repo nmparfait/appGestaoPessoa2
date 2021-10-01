@@ -3,7 +3,7 @@
 
 	
 		    
-		    	<h1>Check the Adress</h1>
+		    	<h5>Check the Adress</h5>
 		    	
 		    	<input type="text" class="form-control" placeholder="logradouro"  name="logradouro">
 		    	<input type="text" class="form-control" placeholder="cep"  name="cep">

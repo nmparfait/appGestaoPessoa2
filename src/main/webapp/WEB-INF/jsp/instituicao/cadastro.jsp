@@ -10,9 +10,9 @@
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	</head>
-	<body>	
-		
-		<c: import url="/jsp/menu.jsp"/>
+	<body>
+
+	<c:import url="/WEB-INF/jsp/menu.jsp"/>
 		
 		
 		 <form action="/instituicao/incluir" method="post">
@@ -71,8 +71,8 @@
 
 		  <button type="submit" ${botao} class="btn btn-default">Cadastrar</button>
 	  </form>
-	  
-	  <c: import url="/jsp/footer.jsp"/>
+
+		<c:import url="/WEB-INF/jsp/footer.jsp"/>
 		
 	</body>
 	

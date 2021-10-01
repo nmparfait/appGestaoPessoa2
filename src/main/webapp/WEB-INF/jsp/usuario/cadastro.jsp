@@ -1,4 +1,4 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
@@ -15,33 +15,36 @@
 		<link rel="stylesheet" href="css/footer.css" />
 	</head>
 	<body>
-	
-		<c: import url="/WEB-INF/jsp/menu.jsp"/>
-		
-		<c:if test="${not empty mensagem}">
-			<div class="alert alert-danger">
-			  <strong>Está errado!</strong> ${mensagem}
-			</div>
-		</c:if>
-		
-		 <form class="box" action="/cep" method="post">
-          <h1>Register User</h1>
-          <!-- <input type="email" name="email" placeholder="email@email.com">  -->
-          <input type="text" class="form-control" placeholder="CEP"  name="cep">
-          <input type="submit"  value="buscar">
-       </form>
-       
-       <form action="/usuario" method="post" class="box">
-       	<input type="text" class="form-control" placeholder="Nome"  name="nome">
-       	<input type="email" class="form-control" placeholder="Email"  name="email">
-       	<input type="senha" class="form-control" placeholder="Senha"  name="senha">
-       	
-       	<c: import url="/jsp/endereco.jsp"/>
-       
-       </form>
-       
-       
 
-		<c: import url="/jsp/footer.jsp"/>
+
+
+	<c:if test="${not empty mensagem}">
+		<div class="alert alert-danger">
+			<strong>Está errado!</strong> ${mensagem}
+		</div>
+	</c:if>
+
+		<div class="container">
+			 <form class="box" action="/cep" method="post" >
+				 <h5>Register User</h5>
+			  <!-- <input type="email" name="email" placeholder="email@email.com">  -->
+			  <input type="text" class="form-control" placeholder="CEP"  name="cep">
+			  <input type="submit"  value="buscar">
+			</form>
+       
+       		<form action="/usuario" method="post" class="box">
+
+				<input type="text" class="form-control" placeholder="Nome"  name="nome">
+				<input type="text" class="form-control" placeholder="email@email.com"  name="email">
+				<input type="password" class="form-control" name="senha" placeholder="Password">
+				<input type="submit"  value="Login">
+
+			   <c:import url="/WEB-INF/jsp/endereco.jsp"/>
+
+	   		</form>
+
+		</div>
+
+
 	</body>
 </html>

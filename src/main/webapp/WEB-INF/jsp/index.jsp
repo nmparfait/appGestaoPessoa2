@@ -18,7 +18,8 @@
 
 
 		<div class="header">
-			<c:import url="../jsp/menu.jsp"/>
+
+			<c:import url="/WEB-INF/jsp/menu.jsp"/>
 	    </div>
 	    <hr>
 		<!-- connect people -->
@@ -134,7 +135,7 @@
 		    </section>
 		    <!-- end of about -->
 	<!-- footer -->
-		<c:import url="../jsp/footer.jsp"/>
+		<c:import url="/WEB-INF/jsp/footer.jsp"/>
 
     	
 	</body>

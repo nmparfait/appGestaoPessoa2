@@ -15,8 +15,8 @@
 		<link rel="stylesheet" href="css/footer.css" />
 	</head>
 	<body>
-	
-		<c: import url="/jsp/menu.jsp"/>
+
+	<c:import url="/WEB-INF/jsp/menu.jsp"/>
 
 	<div class="container">
 	  <h2>Cadastro de Administrativo</h2>
@@ -57,6 +57,6 @@
 	</div>
 
 
-	<c: import url="/jsp/footer.jsp"/>
+		<c:import url="/WEB-INF/jsp/footer.jsp"/>
 </body>
 </html>
